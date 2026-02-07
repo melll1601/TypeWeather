@@ -10,7 +10,6 @@
     <title>Document</title>
 </head>
 <body class="font-[Nunito] bg-[url('/assets/Background.png')] bg-cover bg-center h-screen">
-
     <div>
         <div id="menu" class="">
             <div id="home" class="">
@@ -29,8 +28,6 @@
                 </form>
             </div>
         </div>
-        
-
         <div id="weather" class="hidden">
             <div class="bg-[#16161F] rounded-[12px] mx-2 xl:6">
                 <div class="flex gap-2 mx-3 xl:gap-4 xl:mx-4">
@@ -45,28 +42,30 @@
                     </div>
                 </div>
                 <div id="infos" class="mt-3 xl:mt-4 bg-[#16161F] rounded-[12px] mx-2 xl:6 bg-[url('/assets/bg-infos.png')] bg-cover bg-center">
-                    <div class="flex text-white">
-                        <div>
-                            <h2>Porto Alegre, RS</h2>
-                            <h3>Segunda-feira, 15 de maio de 2023</h3>
+                    <div class="p-[clamp(20px,4vw,32px)] pb-0">
+                        <div class="flex text-white justify-between">
+                            <div>
+                                <h2 class="text-[clamp(16px,2.5vw,20px)]">Porto Alegre, RS</h2>
+                                <h3 class="text-[clamp(12px,2.5vw,32px)]">Segunda-feira, 15 de maio de 2023</h3>
+                            </div>
+                            <h4 class="text-[clamp(12px,3vw,20px)]">21:39</h4>
                         </div>
-                        <h4>21:39</h4>
+                        <div class="text-white flex mt-[clamp(115px,24.51px+24.13vw,354px)] justify-center items-center">
+                            <div class="mr-[clamp(54px,43.78px+2.725vw,81px)]">
+                                <h1 class="text-5xl font-extrabold xl:text-7xl mb-[clamp(8px,6.487px+0.4035vw,12px)]">28°c</h1>
+                                <div class="flex flex-col  xl:flex-row xl:gap-8">
+                                    <h4 class="text-[clamp(16px,14.5px+0.4vw,20px)]">26°c/32°c</h4>
+                                    <p class="text-[clamp(14px,11.7px+0.6vw,20px)]">Poucas nuvens</p>
+                                </div>
+                            </div>
+                            <div class="tempo">
+                                <img src="assets/noite.png" alt="icon-noite">
+                            </div>
+                        </div>
                     </div>
-                    <div class="text-white flex">
-                        <div>
-                            <h1 class="text-5xl font-extrabold xl:text-7xl">28°c</h1>
-                            <h4>26°c/32°c</h4>
-                            <p>Poucas nuvens</p>
-                        </div>
-                        <div class="tempo">
-                            <img src="assets/noite.png" alt="icon-noite">
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
-
-
-
         </div>
     </div>
     <script src="script.js"></script>
