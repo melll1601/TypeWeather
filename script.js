@@ -35,7 +35,7 @@ document.querySelector('#search').addEventListener('submit', async (event) =>{
 function showInfo(json){
 
     document.querySelector('#weather').classList.remove('hidden');
-    document.querySelector('#weather').classList.add('block');
+    document.querySelector('#weather').classList.add('flex');
     document.querySelector('#menu').classList.add('hidden');
 
 }

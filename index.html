@@ -10,7 +10,7 @@
     <link rel="shortcut icon" type = "image/png" href="/assets/logo-typeWeather.png">
     <title>TypeWeather</title>
 </head>
-<body class="font-[Nunito] bg-[url('/assets/Background.png')] bg-cover bg-center h-screen">
+<body class="font-[Nunito] bg-[url('/assets/Background.png')] bg-cover bg-center h-screen xl:max-h-[768px]">
     <div>
         <div id="menu" class="">
             <div id="home" class="">
@@ -29,7 +29,7 @@
                 </form>
             </div>
         </div>
-        <div id="weather" class="hidden flex-col mx:flex-row ">
+        <div id="weather" class="hidden flex flex-col xl:flex-row m-[clamp(8px,3vw,24px)]">
             <div class="bg-[#16161F] rounded-[12px] mx-2 xl:6">
                 <div class="flex gap-2 mx-3 xl:gap-4 xl:mx-4">
                     <div class="mt-8 px-[17px] py-[20px] bg-[#1E1E29] rounded-[8px] xl:mt-14">
@@ -68,9 +68,8 @@
                     </div>
                 </div>
             </div>
-            <div>
-                <div id="infos-2" class="bg-[#16161F] rounded-[12px] mx-2 xl:6 mt-2">
-                    <h2 class="hidden xl:block color-[#FAFAFA] text-[16px] font-regular">Detalhes do clima hoje</h2>
+            <div class="flex flex-1 flex-col">
+                <div id="infos-2" class="flex-1 bg-[#16161F] rounded-[12px] mx-2 mt-2">
                     <dl class="space-y-4 text-[#BFBFD4] py-[clamp(20px,14px+1.6vw,36px)] mx-[clamp(16px,13px+0.8vw,24px)]">
                         <div class="flex justify-between pb-4 border-b border-[#BFBFD4]">
                             <div class="flex items-center gap-3">
@@ -113,16 +112,65 @@
                         </div>
                     </dl>
                 </div>
-                <div id="infos-semanal">
-                    <div>
-                        <h4>Ter</h4>
-                        <img src="" alt="">
-                        <h5>32c</h5>
-                        <h6>26</h6>
+                <div id="infos-semanal" class="bg-[#16161F] rounded-[12px] mx-2 xl:6 mt-2 px-[clamp(18px,4vw,50px)] py-[clamp(26px,5vw,50px)] flex flex-row justify-between">
+                    <div class="flex flex-col items-center">
+                        <h4 class="text-sm text-[#FAFAFA] font-bold">Ter</h4>
+                        <img class="w-[clamp(56px,4vw,67px)] h-[clamp(56px,4vw,67px)]" src="assets/rain-icon.png" alt="tempo de chuva">
+                        <div class="flex flex-col xl:flex-row gap-2">
+                            <h5 class="text-sm text-[#FAFAFA] font-bold">32ºc</h5>
+                            <h6 class="text-sm text-[#BFBFD4] font-bold">26ºc </h6>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col items-center">
+                        <h4 class="text-sm text-[#FAFAFA] font-bold">Qua</h4>
+                        <img class="w-[clamp(56px,4vw,67px)] h-[clamp(56px,4vw,67px)]" src="assets/sun-icon.png" alt="tempo de chuva">
+                        <div class="flex flex-col xl:flex-row gap-2">
+                            <h5 class="text-sm text-[#FAFAFA] font-bold">32ºc</h5>
+                            <h6 class="text-sm text-[#BFBFD4] font-bold">26ºc </h6>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col items-center">
+                        <h4 class="text-sm text-[#FAFAFA] font-bold">Qui</h4>
+                        <img class="w-[clamp(56px,4vw,67px)] h-[clamp(56px,4vw,67px)]" src="assets/sun-icon.png" alt="tempo de chuva">
+                        <div class="flex flex-col xl:flex-row gap-2">
+                            <h5 class="text-sm text-[#FAFAFA] font-bold">32ºc</h5>
+                            <h6 class="text-sm text-[#BFBFD4] font-bold">26ºc </h6>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col items-center">
+                        <h4 class="text-sm text-[#FAFAFA] font-bold">Sex</h4>
+                        <img class="w-[clamp(56px,4vw,67px)] h-[clamp(56px,4vw,67px)]" src="assets/sun-icon.png" alt="tempo de chuva">
+                        <div class="flex flex-col xl:flex-row gap-2">
+                            <h5 class="text-sm text-[#FAFAFA] font-bold">32ºc</h5>
+                            <h6 class="text-sm text-[#BFBFD4] font-bold">26ºc </h6>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col items-center">
+                        <h4 class="text-sm text-[#FAFAFA] font-bold">Sab</h4>
+                        <img class="w-[clamp(56px,4vw,67px)] h-[clamp(56px,4vw,67px)]" src="assets/sun-icon.png" alt="tempo de chuva">
+                        <div class="flex flex-col xl:flex-row gap-2">
+                            <h5 class="text-sm text-[#FAFAFA] font-bold">32ºc</h5>
+                            <h6 class="text-sm text-[#BFBFD4] font-bold">26ºc </h6>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col items-center">
+                        <h4 class="text-sm text-[#FAFAFA] font-bold">Dom</h4>
+                        <img class="w-[clamp(56px,4vw,67px)] h-[clamp(56px,4vw,67px)]" src="assets/sun-icon.png" alt="tempo de chuva">
+                        <div class="flex flex-col xl:flex-row gap-2">
+                            <h5 class="text-sm text-[#FAFAFA] font-bold">32ºc</h5>
+                            <h6 class="text-sm text-[#BFBFD4] font-bold">26ºc </h6>
+                        </div>
                     </div>
                 </div>
+                <div id="message" class="bg-[#16161F] rounded-[12px] mx-2 xl:6 mt-2">
+                    <h2 class="m-12">O sol tá chamando: pega um tempo pra você e vai aproveitar o dia lá fora.</h2>
+                </div>
             </div>
-
         </div>
     </div>
     <script src="script.js"></script>
