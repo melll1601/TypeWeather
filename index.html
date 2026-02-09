@@ -12,30 +12,36 @@
 </head>
 <body class="font-[Nunito] bg-[url('/assets/Background.png')] bg-cover bg-center h-screen xl:max-h-[768px]">
     <div>
-        <div id="menu" class="">
-            <div id="home" class="">
-                <div id="logo" class="flex justify-center mt-12 mb-48 xl:mb-40">
-                    <img class="w-[186px] h-[32px]" src="assets/Logo.png" alt="logo-site">
-                </div>
-                <div class=" mx-[32px] flex flex-col gap-1 xl:gap-2 ">
-                    <h1 class=" text-center text-[20px] xl:text-[32px] text-4xl font-bold text-white">Boas vindas ao <span class="text-blue-300">TypeWeather</span> </h1>
-                    <h2 class=" text-center text-[16px] xl:text-[20px] text-stone-200">Escolha um local para ver a previsão do tempo</h2>
-                </div>
-            </div>
-            <div class=" mt-8 mx-8 px-[17px] py-[20px] bg-[#1E1E29] rounded-[8px] xl:mt-14 xl:mx-[431px]">
-                <form id="search" class="flex justify-between">
-                    <input class="outline-none text-[#7F7F98]" type="text" placeholder="Buscar local" id="cityName">
-                    <button><img src="assets/icon-search.png" alt="searchIcon"></button>
-                </form>
-            </div>
+<div id="home">
+    <div
+        id="logo"
+        class="flex justify-center mt-12 mb-[clamp(160px,20vw,192px)]">
+        <img class="w-[186px] h-[32px]" src="assets/Logo.png" alt="logo-site">
+    </div>
+    <div class="mx-[32px] flex flex-col gap-[clamp(4px,1vw,8px)]">
+        <h1  class="text-center text-[clamp(20px,4vw,32px)] font-bold text-white">
+            Boas vindas ao <span class="text-blue-300">TypeWeather</span>
+        </h1>
+        <h2 class="text-center text-[clamp(16px,3vw,20px)] text-stone-200">
+            Escolha um local para ver a previsão do tempo
+        </h2>
+    </div>
         </div>
-        <div id="weather" class="hidden flex flex-col xl:flex-row m-[clamp(8px,3vw,24px)]">
+        <div class="mt-[clamp(32px,4vw,56px)] mx-[clamp(32px,12vw,431px)] px-[17px] py-[20px] bg-[#1E1E29] rounded-[8px]">
+            <form id="search" class="flex justify-between">
+                <input class="outline-none text-[#7F7F98]" type="text" placeholder="Buscar local" id="cityName">
+                <button>
+                    <img src="assets/icon-search.png" alt="searchIcon">
+                </button>
+            </form>
+        </div>
+        <div id="weather" class="hidden flex flex-col xl:flex-row m-[clamp(8px,3vw,24px)] pb-[clamp(8px,3vw,24px)]">
             <div class="bg-[#16161F] rounded-[12px] mx-2 xl:6">
                 <div class="flex gap-2 mx-3 xl:gap-4 xl:mx-4">
-                    <div class="mt-8 px-[17px] py-[20px] bg-[#1E1E29] rounded-[8px] xl:mt-14">
+                    <div class="mt-4 px-[17px] py-[20px] bg-[#1E1E29] rounded-[8px]">
                         <img src="assets/logo-typeWeather.png" alt="logo-typeWeather">
                     </div>
-                    <div class=" mt-8 w-full px-[17px] py-[20px] bg-[#1E1E29] rounded-[8px] xl:mt-14">
+                    <div class=" mt-4 w-full px-[17px] py-[20px] bg-[#1E1E29] rounded-[8px]">
                         <form id="search" class="flex justify-between">
                             <input class="outline-none text-[#7F7F98]" type="text" placeholder="Buscar local" id="cityName">
                             <button><img src="assets/icon-search.png" alt="searchIcon"></button>
@@ -48,11 +54,11 @@
                             <div class="flex text-white justify-between">
                                 <div>
                                     <h2 class="text-[clamp(16px,2.5vw,20px)]">Porto Alegre, RS</h2>
-                                    <h3 class="text-[clamp(12px,2.5vw,32px)]">Segunda-feira, 15 de maio de 2023</h3>
+                                    <h3 class="text-[clamp(12px,2.5vw,16px)] text-[#FAFAFA]">Segunda-feira, 15 de maio de 2023</h3>
                                 </div>
                                 <h4 class="text-[clamp(12px,3vw,20px)]">21:39</h4>
                             </div>
-                            <div class="text-white flex mt-[clamp(115px,24.51px+24.13vw,354px)] justify-center items-center">
+                            <div class="text-white flex mt-[clamp(115px,24.51px+24.13vw,354px)] justify-between items-center">
                                 <div class="mr-[clamp(54px,43.78px+2.725vw,81px)]">
                                     <h1 class="text-5xl font-extrabold xl:text-7xl mb-[clamp(8px,6.487px+0.4035vw,12px)]">28°c</h1>
                                     <div class="flex flex-col  xl:flex-row xl:gap-8">
@@ -61,7 +67,7 @@
                                     </div>
                                 </div>
                                 <div class="tempo">
-                                    <img src="assets/noite.png" alt="icon-noite">
+                                    <img class="shrink-0 w-[clamp(120px,18vw,248px)] h-[clamp(120px,18vw,248px)] mb-10" src="assets/sun-icon.png" alt="icon-noite">
                                 </div>
                             </div>
                         </div>
@@ -168,7 +174,7 @@
                     </div>
                 </div>
                 <div id="message" class="bg-[#16161F] rounded-[12px] mx-2 xl:6 mt-2">
-                    <h2 class="m-12">O sol tá chamando: pega um tempo pra você e vai aproveitar o dia lá fora.</h2>
+                    <h2 class="m-12 text-[clamp(16px,3vw,24px)] text-center text-white">O sol tá chamando: pega um tempo pra você e vai aproveitar o dia lá fora.</h2>
                 </div>
             </div>
         </div>
