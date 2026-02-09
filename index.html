@@ -47,21 +47,24 @@
                     </div>
                 </div>
                 <div id="infos" class="m-3 xl:m-4 rounded-[12px] pb-3">
-                    <div class="bg-[url('/assets/bg-infos.png')] bg-cover bg-center rounded-[12px]">
+                    <div id="bg-info" class="bg-gradient-to-r from-[#16161F] via-[#1E1E29] rounded-[12px]">
                         <div class="p-[clamp(20px,4vw,32px)] pb-0">
                             <div class="flex text-white justify-between">
                                 <div>
-                                    <h2 class="text-[clamp(16px,2.5vw,20px)]">Porto Alegre, RS</h2>
-                                    <h3 class="text-[clamp(12px,2.5vw,16px)] text-[#FAFAFA]">Segunda-feira, 15 de maio de 2023</h3>
+                                    <h2 id="city" class="text-[clamp(16px,2.5vw,20px)]">Porto Alegre, <span id="country">RS</span></h2>
+                                    <h3 id="date-time" class="text-[clamp(12px,2.5vw,16px)] text-[#FAFAFA]">Segunda-feira, 15 de maio de 2023</h3>
                                 </div>
-                                <h4 class="text-[clamp(12px,3vw,20px)]">21:39</h4>
+                                <h4 id="hour" class="text-[clamp(12px,3vw,20px)]">21:39</h4>
                             </div>
                             <div class="text-white flex mt-[clamp(115px,24.51px+24.13vw,354px)] justify-between items-center">
                                 <div class="mr-[clamp(54px,43.78px+2.725vw,81px)]">
-                                    <h1 class="text-5xl font-extrabold xl:text-7xl mb-[clamp(8px,6.487px+0.4035vw,12px)]">28°c</h1>
+                                    <h1 id="temp" class="text-5xl font-extrabold xl:text-7xl mb-[clamp(8px,6.487px+0.4035vw,12px)]">28°c</h1>
                                     <div class="flex flex-col  xl:flex-row xl:gap-8">
-                                        <h4 class="text-[clamp(16px,14.5px+0.4vw,20px)]">26°c/32°c</h4>
-                                        <p class="text-[clamp(14px,11.7px+0.6vw,20px)]">Poucas nuvens</p>
+                                        <div class="flex">
+                                            <h4 id="temp-min" class="text-[clamp(16px,14.5px+0.4vw,20px)]">26°c</h4>
+                                            <h4 id="temp-max" class="text-[clamp(16px,14.5px+0.4vw,20px)]">32°c</h4>
+                                        </div>
+                                        <p id="description-day" class="text-[clamp(14px,11.7px+0.6vw,20px)]">Poucas nuvens</p>
                                     </div>
                                 </div>
                                 <div class="tempo">
@@ -85,9 +88,9 @@
                         <div class="flex justify-between pb-4 border-b border-[#BFBFD4]">
                             <div class="flex items-center gap-3">
                                 <img class="w-[clamp(24px,21px+0.8vw,32px)] h-[clamp(24px,21px+0.8vw,32px)]" src="assets/rain-probability.png" alt="icon-sensação-térmica">
-                                <dt class="text-sm font-bold color-[#BFBFD4]">Probabilidade de chuva</dt>
+                                <dt class="text-sm font-bold color-[#BFBFD4]">Chuva</dt>
                             </div>
-                            <dd id="rain-probability">0%</dd>
+                            <dd id="rain">0%</dd>
                         </div>
                         <div class="flex justify-between pb-4 border-b border-[#BFBFD4]">
                             <div class="flex items-center gap-3">
