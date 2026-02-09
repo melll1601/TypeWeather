@@ -7,7 +7,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <title>Document</title>
+    <link rel="shortcut icon" type = "image/png" href="/assets/logo-typeWeather.png">
+    <title>TypeWeather</title>
 </head>
 <body class="font-[Nunito] bg-[url('/assets/Background.png')] bg-cover bg-center h-screen">
     <div>
@@ -28,7 +29,7 @@
                 </form>
             </div>
         </div>
-        <div id="weather" class="hidden">
+        <div id="weather" class="hidden flex-col mx:flex-row ">
             <div class="bg-[#16161F] rounded-[12px] mx-2 xl:6">
                 <div class="flex gap-2 mx-3 xl:gap-4 xl:mx-4">
                     <div class="mt-8 px-[17px] py-[20px] bg-[#1E1E29] rounded-[8px] xl:mt-14">
@@ -41,31 +42,87 @@
                         </form>
                     </div>
                 </div>
-                <div id="infos" class="mt-3 xl:mt-4 bg-[#16161F] rounded-[12px] mx-2 xl:6 bg-[url('/assets/bg-infos.png')] bg-cover bg-center">
-                    <div class="p-[clamp(20px,4vw,32px)] pb-0">
-                        <div class="flex text-white justify-between">
-                            <div>
-                                <h2 class="text-[clamp(16px,2.5vw,20px)]">Porto Alegre, RS</h2>
-                                <h3 class="text-[clamp(12px,2.5vw,32px)]">Segunda-feira, 15 de maio de 2023</h3>
-                            </div>
-                            <h4 class="text-[clamp(12px,3vw,20px)]">21:39</h4>
-                        </div>
-                        <div class="text-white flex mt-[clamp(115px,24.51px+24.13vw,354px)] justify-center items-center">
-                            <div class="mr-[clamp(54px,43.78px+2.725vw,81px)]">
-                                <h1 class="text-5xl font-extrabold xl:text-7xl mb-[clamp(8px,6.487px+0.4035vw,12px)]">28°c</h1>
-                                <div class="flex flex-col  xl:flex-row xl:gap-8">
-                                    <h4 class="text-[clamp(16px,14.5px+0.4vw,20px)]">26°c/32°c</h4>
-                                    <p class="text-[clamp(14px,11.7px+0.6vw,20px)]">Poucas nuvens</p>
+                <div id="infos" class="m-3 xl:m-4 rounded-[12px] pb-3">
+                    <div class="bg-[url('/assets/bg-infos.png')] bg-cover bg-center rounded-[12px]">
+                        <div class="p-[clamp(20px,4vw,32px)] pb-0">
+                            <div class="flex text-white justify-between">
+                                <div>
+                                    <h2 class="text-[clamp(16px,2.5vw,20px)]">Porto Alegre, RS</h2>
+                                    <h3 class="text-[clamp(12px,2.5vw,32px)]">Segunda-feira, 15 de maio de 2023</h3>
                                 </div>
+                                <h4 class="text-[clamp(12px,3vw,20px)]">21:39</h4>
                             </div>
-                            <div class="tempo">
-                                <img src="assets/noite.png" alt="icon-noite">
+                            <div class="text-white flex mt-[clamp(115px,24.51px+24.13vw,354px)] justify-center items-center">
+                                <div class="mr-[clamp(54px,43.78px+2.725vw,81px)]">
+                                    <h1 class="text-5xl font-extrabold xl:text-7xl mb-[clamp(8px,6.487px+0.4035vw,12px)]">28°c</h1>
+                                    <div class="flex flex-col  xl:flex-row xl:gap-8">
+                                        <h4 class="text-[clamp(16px,14.5px+0.4vw,20px)]">26°c/32°c</h4>
+                                        <p class="text-[clamp(14px,11.7px+0.6vw,20px)]">Poucas nuvens</p>
+                                    </div>
+                                </div>
+                                <div class="tempo">
+                                    <img src="assets/noite.png" alt="icon-noite">
+                                </div>
                             </div>
                         </div>
                     </div>
-                    
                 </div>
             </div>
+            <div>
+                <div id="infos-2" class="bg-[#16161F] rounded-[12px] mx-2 xl:6 mt-2">
+                    <h2 class="hidden xl:block color-[#FAFAFA] text-[16px] font-regular">Detalhes do clima hoje</h2>
+                    <dl class="space-y-4 text-[#BFBFD4] py-[clamp(20px,14px+1.6vw,36px)] mx-[clamp(16px,13px+0.8vw,24px)]">
+                        <div class="flex justify-between pb-4 border-b border-[#BFBFD4]">
+                            <div class="flex items-center gap-3">
+                                <img class="w-[clamp(24px,21px+0.8vw,32px)] h-[clamp(24px,21px+0.8vw,32px)]" src="assets/thermal-sensation.png" alt="icon-sensação-térmica">
+                                <dt class="text-sm font-bold color-[#BFBFD4]">Sensação térmica</dt>
+                            </div>
+                            <dd id="thermal-sensation">26°C</dd>
+                        </div>
+
+                        <div class="flex justify-between pb-4 border-b border-[#BFBFD4]">
+                            <div class="flex items-center gap-3">
+                                <img class="w-[clamp(24px,21px+0.8vw,32px)] h-[clamp(24px,21px+0.8vw,32px)]" src="assets/rain-probability.png" alt="icon-sensação-térmica">
+                                <dt class="text-sm font-bold color-[#BFBFD4]">Probabilidade de chuva</dt>
+                            </div>
+                            <dd id="rain-probability">0%</dd>
+                        </div>
+
+                        <div class="flex justify-between pb-4 border-b border-[#BFBFD4]">
+                            <div class="flex items-center gap-3">
+                                <img class="w-[clamp(24px,21px+0.8vw,32px)] h-[clamp(24px,21px+0.8vw,32px)]" src="assets/wind-speed.png" alt="icon-sensação-térmica">
+                                <dt class="text-sm font-bold color-[#BFBFD4]">Velocidade do vento</dt>
+                            </div>
+                            <dd id="wind-speed">8 km/h</dd>
+                        </div>
+
+                        <div class="flex justify-between pb-4 border-b border-[#BFBFD4]">
+                            <div class="flex items-center gap-3">
+                                <img class="w-[clamp(24px,21px+0.8vw,32px)] h-[clamp(24px,21px+0.8vw,32px)]" src="assets/humity.png" alt="icon-sensação-térmica">
+                                <dt class="text-sm font-bold color-[#BFBFD4]">Umidade do ar</dt>
+                            </div>
+                            <dd id="humity">40%</dd>
+                        </div>
+
+                        <div class="flex justify-between">
+                            <div class="flex items-center gap-3">
+                                <img class="w-[clamp(24px,21px+0.8vw,32px)] h-[clamp(24px,21px+0.8vw,32px)]" src="assets/uv-index.png" alt="icon-sensação-térmica">
+                                <dt class="text-sm font-bold color-[#BFBFD4]">Índice UV</dt>
+                            </div>
+                            <dd id="uv-index">5</dd>
+                        </div>
+                    </dl>
+                </div>
+                <div id="infos-semanal">
+                    <div>
+                        <h4>Ter</h4>
+                        <img src="" alt="">
+                        <h5>32c</h5>
+                        <h6>26</h6>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
     <script src="script.js"></script>
