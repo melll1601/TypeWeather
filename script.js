@@ -36,7 +36,7 @@ async function buscarClima(cityname) {
         } else {
             alert('Não foi possível localizar');
         }
-        
+
     } catch (error) {
         console.error("Erro ao buscar dados:", error);
         alert("Erro ao buscar os dados do clima.");
@@ -81,11 +81,9 @@ function showInfo(json) {
 
     const bg = document.querySelector('#bg-info');
     if (hours >= 6 && hours < 18) {
-        // Dia
         bg.classList.remove('bg-gradient-to-r', 'from-[#16161F]', 'via-[#1E1E29]');
         bg.classList.add('bg-gradient-to-r', 'from-blue-500', 'to-blue-700');
     } else {
-        // Noite
         bg.classList.remove('bg-gradient-to-r', 'from-blue-500', 'to-blue-700');
         bg.classList.add('bg-gradient-to-r', 'from-[#16161F]', 'via-[#1E1E29]');
     }
