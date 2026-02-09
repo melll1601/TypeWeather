@@ -25,8 +25,8 @@
                 </h2>
             </div>
             <div class="mt-[clamp(32px,4vw,56px)] mx-[clamp(32px,12vw,431px)] px-[17px] py-[20px] bg-[#1E1E29] rounded-[8px]">
-            <form id="search" class="flex justify-between">
-                <input class="outline-none text-[#7F7F98]" type="text" placeholder="Buscar local" id="cityName">
+            <form id="searchMenu" class="flex justify-between">
+                <input class="outline-none text-[#7F7F98]" type="text" placeholder="Buscar local" id="cityNameMenu">
                 <button>
                     <img src="assets/icon-search.png" alt="searchIcon">
                 </button>
@@ -40,8 +40,8 @@
                         <img src="assets/logo-typeWeather.png" alt="logo-typeWeather">
                     </div>
                     <div class=" mt-4 w-full px-[17px] py-[20px] bg-[#1E1E29] rounded-[8px]">
-                        <form id="search" class="flex justify-between">
-                            <input class="outline-none text-[#7F7F98]" type="text" placeholder="Buscar local" id="cityName">
+                        <form id="searchSecondary" class="flex justify-between">
+                            <input class="outline-none text-[#7F7F98]" type="text" placeholder="Buscar local" id="cityNameSecondary">
                             <button><img src="assets/icon-search.png" alt="searchIcon"></button>
                         </form>
                     </div>
@@ -68,7 +68,7 @@
                                     </div>
                                 </div>
                                 <div class="tempo">
-                                    <img class="shrink-0 w-[clamp(120px,18vw,248px)] h-[clamp(120px,18vw,248px)] mb-10" src="assets/sun-icon.png" alt="icon-noite">
+                                    <img id="img-temp" class="shrink-0 w-[clamp(120px,18vw,248px)] h-[clamp(120px,18vw,248px)] mb-10" src="assets/cloudy-icon.png" alt="icon-noite">
                                 </div>
                             </div>
                         </div>
@@ -165,8 +165,8 @@
                         </div>
                     </div>
                 </div>
-                <div id="message" class="bg-[#16161F] rounded-[12px] mx-2 xl:6 mt-2">
-                    <h2 class="m-12 text-[clamp(16px,3vw,24px)] text-center text-white">O sol tá chamando: pega um tempo pra você e vai aproveitar o dia lá fora.</h2>
+                <div class="bg-[#16161F] rounded-[12px] mx-2 xl:6 mt-2">
+                    <h2 id="message" class="m-12 text-[clamp(16px,3vw,24px)] text-center text-white">O sol tá chamando: pega um tempo pra você e vai aproveitar o dia lá fora.</h2>
                 </div>
             </div>
         </div>
