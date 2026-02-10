@@ -35,15 +35,18 @@ SEO-AGENCY
   <img src="/assets/assets-readme/github-gif-desktop.gif" height="300" />
 </p>
 
-# Tecnologias Utilizadas 
+<br>
 
-<div style="display: inline-block">
-  <br>
-  <img align="center" alt="Melissa-HTML" height="40" width="60" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
-  <img align="center" alt="Melissa-CSS" height="40" width="60" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
-  <img align="center" alt="Melissa-VSCode" height="40" width="60" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vscode/vscode-original.svg" />
-  <img align="center" alt="Melissa-Figma" height="40" width="60" src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg" />
-</div>
+# Tecnologias Utilizadas 💻
+
+![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-06B6D4?style=for-the-badge&logo=tailwind-css&logoColor=white)
+![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
+![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
+![Git](https://img.shields.io/badge/Git-%23F05033.svg?style=for-the-badge&logo=git&logoColor=white)
+![VS Code](https://img.shields.io/badge/VS%20Code-007ACC?style=for-the-badge&logo=visual-studio-code&logoColor=white)
+![OpenWeather](https://img.shields.io/badge/OpenWeather-EB6E4B?style=for-the-badge&logo=openweathermap&logoColor=white)
+
+
 <br>
 
 
@@ -73,10 +76,6 @@ Se você não desejar baixar o arquivo, você pode fazer acessar via terminal (o
 bash
 git clone https://github.com/usuario/repositorio.git
 ````
-
-
-# Processo 👩‍💻
-aaa
 
 #  Contato 📲
 - 📩 Email Escolar: melissa_r_pereira@estudante.sesisenai.org.br
