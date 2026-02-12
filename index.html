@@ -10,11 +10,11 @@
     <link rel="shortcut icon" type = "image/png" href="/assets/logo-typeWeather.png">
     <title>TypeWeather</title>
 </head>
-<body class="font-[Nunito] bg-[url('/assets/Background.png')] bg-cover bg-center h-screen xl:max-h-[768px]">
+<body class="font-[Nunito] bg-[url('/assets/Images/Background.png')] bg-cover bg-center h-screen xl:max-h-[768px]">
     <div>
         <div id="menu">
             <div id="logo" class="flex justify-center mt-12 mb-[clamp(160px,20vw,192px)]">
-                <img class="w-[186px] h-[32px]" src="assets/Logo.png" alt="logo-site">
+                <img class="w-[186px] h-[32px]" src="assets/Images/Logo.png" alt="logo-site">
             </div>
             <div class="mx-[32px] flex flex-col gap-[clamp(4px,1vw,8px)]">
                 <h1  class="text-center text-[clamp(20px,4vw,32px)] font-bold text-white">
@@ -28,7 +28,7 @@
             <form id="searchMenu" class="flex justify-between">
                 <input class="outline-none text-[#7F7F98]" type="text" placeholder="Buscar local" id="cityNameMenu">
                 <button>
-                    <img src="assets/icon-search.png" alt="searchIcon">
+                    <img src="assets/Images/icon-search.png" alt="searchIcon">
                 </button>
             </form>
         </div>
@@ -37,12 +37,12 @@
             <div class="bg-[#16161F] rounded-[12px] mx-2 xl:6">
                 <div class="flex gap-2 mx-3 xl:gap-4 xl:mx-4">
                     <div class="mt-4 px-[17px] py-[20px] bg-[#1E1E29] rounded-[8px]">
-                        <img src="assets/logo-typeWeather.png" alt="logo-typeWeather">
+                        <img src="assets/Images/logo-typeWeather.png" alt="logo-typeWeather">
                     </div>
                     <div class=" mt-4 w-full px-[17px] py-[20px] bg-[#1E1E29] rounded-[8px]">
                         <form id="searchSecondary" class="flex justify-between">
                             <input class="outline-none text-[#7F7F98]" type="text" placeholder="Buscar local" id="cityNameSecondary">
-                            <button><img src="assets/icon-search.png" alt="searchIcon"></button>
+                            <button><img src="assets/Images/icon-search.png" alt="searchIcon"></button>
                         </form>
                     </div>
                 </div>
@@ -68,7 +68,7 @@
                                     </div>
                                 </div>
                                 <div class="tempo">
-                                    <img id="img-temp" class="shrink-0 w-[clamp(120px,18vw,248px)] h-[clamp(120px,18vw,248px)] mb-10" src="assets/cloudy-icon.png" alt="icon-noite">
+                                    <img id="img-temp" class="shrink-0 w-[clamp(120px,18vw,248px)] h-[clamp(120px,18vw,248px)] mb-10" src="assets/images/cloudy-icon.png" alt="icon-noite">
                                 </div>
                             </div>
                         </div>
@@ -80,28 +80,28 @@
                     <dl class="space-y-4 text-[#BFBFD4] py-[clamp(20px,14px+1.6vw,36px)] mx-[clamp(16px,13px+0.8vw,24px)]">
                         <div class="flex justify-between pb-4 border-b border-[#BFBFD4]">
                             <div class="flex items-center gap-3">
-                                <img class="w-[clamp(24px,21px+0.8vw,32px)] h-[clamp(24px,21px+0.8vw,32px)]" src="assets/thermal-sensation.png" alt="icon-sensação-térmica">
+                                <img class="w-[clamp(24px,21px+0.8vw,32px)] h-[clamp(24px,21px+0.8vw,32px)]" src="assets/Images/thermal-sensation.png" alt="icon-sensação-térmica">
                                 <dt class="text-sm font-bold color-[#BFBFD4]">Sensação térmica</dt>
                             </div>
                             <dd id="thermal-sensation">26°C</dd>
                         </div>
                         <div class="flex justify-between pb-4 border-b border-[#BFBFD4]">
                             <div class="flex items-center gap-3">
-                                <img class="w-[clamp(24px,21px+0.8vw,32px)] h-[clamp(24px,21px+0.8vw,32px)]" src="assets/rain.png" alt="icon-sensação-térmica">
+                                <img class="w-[clamp(24px,21px+0.8vw,32px)] h-[clamp(24px,21px+0.8vw,32px)]" src="assets/Images/rain.png" alt="icon-sensação-térmica">
                                 <dt class="text-sm font-bold color-[#BFBFD4]">Chuva</dt>
                             </div>
                             <dd id="rain">0%</dd>
                         </div>
                         <div class="flex justify-between pb-4 border-b border-[#BFBFD4]">
                             <div class="flex items-center gap-3">
-                                <img class="w-[clamp(24px,21px+0.8vw,32px)] h-[clamp(24px,21px+0.8vw,32px)]" src="assets/wind.png" alt="icon-sensação-térmica">
+                                <img class="w-[clamp(24px,21px+0.8vw,32px)] h-[clamp(24px,21px+0.8vw,32px)]" src="assets/Images/wind.png" alt="icon-sensação-térmica">
                                 <dt class="text-sm font-bold color-[#BFBFD4]">Velocidade do vento</dt>
                             </div>
                             <dd id="wind-speed">8 km/h</dd>
                         </div>
                         <div class="flex justify-between pb-4 border-b border-[#BFBFD4]">
                             <div class="flex items-center gap-3">
-                                <img class="w-[clamp(24px,21px+0.8vw,32px)] h-[clamp(24px,21px+0.8vw,32px)]" src="assets/humity.png" alt="icon-sensação-térmica">
+                                <img class="w-[clamp(24px,21px+0.8vw,32px)] h-[clamp(24px,21px+0.8vw,32px)]" src="assets/Images/humity.png" alt="icon-sensação-térmica">
                                 <dt class="text-sm font-bold color-[#BFBFD4]">Umidade do ar</dt>
                             </div>
                             <dd id="humity">40%</dd>
@@ -111,7 +111,7 @@
                 <div id="infos-semanal" class="bg-[#16161F] rounded-[12px] mx-2 xl:6 mt-2 px-[clamp(18px,4vw,50px)] py-[clamp(26px,5vw,50px)] flex flex-row justify-between">
                     <div class="flex flex-col items-center">
                         <h4 class="text-sm text-[#FAFAFA] font-bold">Ter</h4>
-                        <img class="w-[clamp(56px,4vw,67px)] h-[clamp(56px,4vw,67px)]" src="assets/rain-icon.png" alt="tempo de chuva">
+                        <img class="w-[clamp(56px,4vw,67px)] h-[clamp(56px,4vw,67px)]" src="assets/Images/rain-icon.png" alt="tempo de chuva">
                         <div class="flex flex-col xl:flex-row gap-2">
                             <h5 class="text-sm text-[#FAFAFA] font-bold">32ºc</h5>
                             <h6 class="text-sm text-[#BFBFD4] font-bold">26ºc </h6>
@@ -119,7 +119,7 @@
                     </div>
                     <div class="flex flex-col items-center">
                         <h4 class="text-sm text-[#FAFAFA] font-bold">Qua</h4>
-                        <img class="w-[clamp(56px,4vw,67px)] h-[clamp(56px,4vw,67px)]" src="assets/sun-icon.png" alt="tempo de chuva">
+                        <img class="w-[clamp(56px,4vw,67px)] h-[clamp(56px,4vw,67px)]" src="assets/Images/sun-icon.png" alt="tempo de chuva">
                         <div class="flex flex-col xl:flex-row gap-2">
                             <h5 class="text-sm text-[#FAFAFA] font-bold">32ºc</h5>
                             <h6 class="text-sm text-[#BFBFD4] font-bold">26ºc </h6>
@@ -127,7 +127,7 @@
                     </div>
                     <div class="flex flex-col items-center">
                         <h4 class="text-sm text-[#FAFAFA] font-bold">Qui</h4>
-                        <img class="w-[clamp(56px,4vw,67px)] h-[clamp(56px,4vw,67px)]" src="assets/sun-icon.png" alt="tempo de chuva">
+                        <img class="w-[clamp(56px,4vw,67px)] h-[clamp(56px,4vw,67px)]" src="assets/Images/sun-icon.png" alt="tempo de chuva">
                         <div class="flex flex-col xl:flex-row gap-2">
                             <h5 class="text-sm text-[#FAFAFA] font-bold">32ºc</h5>
                             <h6 class="text-sm text-[#BFBFD4] font-bold">26ºc </h6>
@@ -135,7 +135,7 @@
                     </div>
                     <div class="flex flex-col items-center">
                         <h4 class="text-sm text-[#FAFAFA] font-bold">Sex</h4>
-                        <img class="w-[clamp(56px,4vw,67px)] h-[clamp(56px,4vw,67px)]" src="assets/sun-icon.png" alt="tempo de chuva">
+                        <img class="w-[clamp(56px,4vw,67px)] h-[clamp(56px,4vw,67px)]" src="assets/Images/sun-icon.png" alt="tempo de chuva">
                         <div class="flex flex-col xl:flex-row gap-2">
                             <h5 class="text-sm text-[#FAFAFA] font-bold">32ºc</h5>
                             <h6 class="text-sm text-[#BFBFD4] font-bold">26ºc </h6>
@@ -143,7 +143,7 @@
                     </div>
                     <div class="flex flex-col items-center">
                         <h4 class="text-sm text-[#FAFAFA] font-bold">Sab</h4>
-                        <img class="w-[clamp(56px,4vw,67px)] h-[clamp(56px,4vw,67px)]" src="assets/sun-icon.png" alt="tempo de chuva">
+                        <img class="w-[clamp(56px,4vw,67px)] h-[clamp(56px,4vw,67px)]" src="assets/Images/sun-icon.png" alt="tempo de chuva">
                         <div class="flex flex-col xl:flex-row gap-2">
                             <h5 class="text-sm text-[#FAFAFA] font-bold">32ºc</h5>
                             <h6 class="text-sm text-[#BFBFD4] font-bold">26ºc </h6>
@@ -151,7 +151,7 @@
                     </div>
                     <div class="flex flex-col items-center">
                         <h4 class="text-sm text-[#FAFAFA] font-bold">Dom</h4>
-                        <img class="w-[clamp(56px,4vw,67px)] h-[clamp(56px,4vw,67px)]" src="assets/sun-icon.png" alt="tempo de chuva">
+                        <img class="w-[clamp(56px,4vw,67px)] h-[clamp(56px,4vw,67px)]" src="assets/Images/sun-icon.png" alt="tempo de chuva">
                         <div class="flex flex-col xl:flex-row gap-2">
                             <h5 class="text-sm text-[#FAFAFA] font-bold">32ºc</h5>
                             <h6 class="text-sm text-[#BFBFD4] font-bold">26ºc </h6>
