@@ -49,22 +49,29 @@ function atualizarBackground(hours) {
     }
 }
 
-function atualizarMensagem(description) {
-    const imgTemp = document.querySelector('#img-temp');
-    const message = document.querySelector('#message');
-    const desc = description.toLowerCase();
 
-    if (desc.includes('chuva')) {
-        imgTemp.src = 'assets/rain-icon.png';
-        message.textContent = "A chuva cai lá fora, um bom momento para se aquecer com um chocolate quente e relaxar!";
-    } else if (desc.includes('sol') || desc.includes('céu limpo')) {
-        imgTemp.src = 'assets/sun-icon.png';
-        message.textContent = "Hoje o sol brilha forte, aproveite para sair e curtir o dia ao ar livre!";
-    } else if (desc.includes('nuvem') || desc.includes('nublado')) {
-        imgTemp.src = 'assets/cloudy-icon.png';
-        message.textContent = "O céu está encoberto hoje, perfeito para uma caminhada tranquila ou colocar a leitura em dia.";
-    } else {
-        imgTemp.src = 'assets/default-icon.png';
-        message.textContent = "Hoje é um belo dia!";
-    }
+import { SunnyClimate } from "./WeatherEdition/sunny.js";
+import { RainClimate } from "./WeatherEdition/rainy.js";
+import { CloudyClimate } from "./WeatherEdition/CloudyClimate.js";
+
+const climates = [
+  new RainClimate(),
+  new SunnyClimate(),
+  new CloudyClimate()
+];
+
+function atualizarMensagem(description) {
+  const imgTemp = document.querySelector("#img-temp");
+  const message = document.querySelector("#message");
+  const desc = description.toLowerCase();
+
+  const climate = climates.find(c => c.matches(desc));
+
+  if (!climate) {
+    imgTemp.src = "assets/default-icon.png";
+    message.textContent = "Hoje é um belo dia!";
+    return;
+  }
+
+  climate.apply(imgTemp, message);
 }
