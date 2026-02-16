@@ -16,18 +16,6 @@ Para o desenvolvimento do design, escolhi um projeto no Figma como inspiração 
 
 - Link do Figma: [https://www.figma.com/proto/Ezj9LSd0qKR1t3fcfmt5HZ/Projeto---Melissa-R.-Pereira---FrontEnd?node-id=0-1&t=IOk5UkjdHhDl5PtT-1](https://www.figma.com/design/DuF2T5JXYfLKK0D86MqS23/TypeWeather--Community-?node-id=3-376&t=XVZDwjMCuQQKtje1-1)
 
-# Estrutura 🏠
-
-````
-SEO-AGENCY
-└── assets
-    └── assets-readme
-├── index.html
-├── README.md
-└── script.js
-
-````
-
 # Preview 👾
 
 <p align="left">
